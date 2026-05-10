@@ -13,9 +13,6 @@ Pod::Spec.new do |s|
   s.tvos.deployment_target = '10.0'
 
   s.source_files = 'Source/*.swift'
-  s.resource_bundles = {
-    'SnapKit_Privacy' => ['Sources/PrivacyInfo.xcprivacy'],
-  }
-
+  s.resources = 'PrivacyInfo.xcprivacy'
   s.swift_version = '5.0'
 end
